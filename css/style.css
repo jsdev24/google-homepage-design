@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: rgba(0, 0, 0, 0.871);
+}
+
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.871);
+}
+
+section {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section header {
+  padding: 0 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 70px;
+  position: relative;
+}
+
+section header .nav-link {
+  margin-left: 18px;
+  font-size: 14px;
+}
+
+section header .nav-link img {
+  width: 20px;
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+  position: relative;
+  opacity: .7;
+}
+
+section header .nav-link img:hover {
+  opacity: .9;
+}
+
+section header .nav-link button {
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  background-color: #4387fd;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 25px 5px;
+  color: #fff;
+  font-weight: bold;
+  padding: 8px 15px;
+  cursor: auto;
+}
+
+section header .nav-link button:hover {
+  -webkit-box-shadow: 0 0 3px #b3b3b3;
+          box-shadow: 0 0 3px #b3b3b3;
+}
+
+section header .products-section {
+  height: 70vh;
+  overflow: auto;
+  position: absolute;
+  z-index: 2;
+  top: 70px;
+  right: 40px;
+  padding: 15px;
+  -webkit-box-shadow: 0 0 10px rgba(128, 128, 128, 0.502);
+          box-shadow: 0 0 10px rgba(128, 128, 128, 0.502);
+  background-color: #fff;
+  border: 5px solid #fff;
+  border-radius: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  grid-gap: 15px;
+  display: none;
+}
+
+section header .products-section .product {
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: center;
+}
+
+section header .products-section .product img {
+  width: 50px;
+}
+
+section header .products-section .product:hover {
+  background-color: rgba(0, 60, 255, 0.122);
+}
+
+section header .products-section::-webkit-scrollbar {
+  width: 10px;
+}
+
+section header .products-section::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+
+section header .products-section::-webkit-scrollbar-thumb {
+  background: rgba(136, 136, 136, 0.282);
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  section header .products-section {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+}
+
+section main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section main .logo-section img {
+  width: 270px;
+}
+
+section main .input-section {
+  position: relative;
+  margin-top: 20px;
+}
+
+section main .input-section img {
+  width: 22px;
+  position: absolute;
+  z-index: 1;
+  right: 15px;
+  top: 12px;
+  cursor: pointer;
+}
+
+section main .input-section input {
+  width: 500px;
+  outline: none;
+  border: 1px solid #dfe1e5;
+  padding: 14px 50px;
+  border-radius: 30px;
+  background-image: url("./../img/search_icon.svg");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 16px 12px;
+  position: relative;
+}
+
+section main .input-section input:hover, section main .input-section input:focus {
+  -webkit-box-shadow: 0 1px 6px rgba(32, 33, 36, 0.278);
+          box-shadow: 0 1px 6px rgba(32, 33, 36, 0.278);
+}
+
+@media only screen and (max-width: 700px) {
+  section main .input-section input {
+    width: 80vw;
+  }
+}
+
+section main .btn-section button {
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  background-color: #f2f2f2;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 25px 5px;
+}
+
+section main .btn-section button:hover {
+  -webkit-box-shadow: 0 0 3px #b3b3b3;
+          box-shadow: 0 0 3px #b3b3b3;
+}
+
+section main .language-section {
+  font-size: 14px;
+}
+
+section main .language-section a {
+  color: #1a0dab;
+}
+
+section footer {
+  background-color: #f2f2f2;
+}
+
+section footer .footer-area {
+  padding: 0 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section footer .footer-area a {
+  padding: 10px;
+  font-size: 14px;
+  color: #70757a;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 800px) {
+  section footer .footer-area {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section footer .footer-area div:nth-child(2) a {
+    padding-top: 15px;
+  }
+}
+
+section footer .footer-area:first-child {
+  padding: 7px 35px;
+  border: 1px solid #d9dbdd;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+section footer .footer-area:first-child a {
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #70757a;
+  display: inline-block;
+}
+
+.show_products {
+  display: -ms-grid !important;
+  display: grid !important;
+}
+/*# sourceMappingURL=style.css.map */
